@@ -18,5 +18,5 @@ export const seo = {
   title: "Anshuman Jha — Backend & Full-Stack Developer",
   description:
     "Anshuman Jha is a Backend & Full-Stack Developer building scalable APIs, enterprise systems, and AI-powered applications with FastAPI, Node.js, Next.js and PostgreSQL.",
-  siteUrl: "https://anshumanjha.dev",
+  siteUrl: "https://ajportfolio0350.vercel.app",
 } as const;
