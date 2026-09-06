@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import { seo, profile } from "@/data/profile";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const inter = Inter({
@@ -59,6 +60,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col overflow-x-clip bg-bg text-ink selection:bg-violet-500/30">
         <div className="noise-overlay" aria-hidden="true" />
         {children}
+        <Analytics />
       </body>
     </html>
   );
