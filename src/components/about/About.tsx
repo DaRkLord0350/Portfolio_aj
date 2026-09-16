@@ -7,22 +7,22 @@ const pillars = [
   {
     icon: Layers,
     title: "Backend engineering",
-    description: "REST APIs and services built with FastAPI and Node.js for enterprise systems.",
+    description: "REST APIs and services that power CRM, invoicing and operational workflows.",
   },
   {
     icon: Database,
     title: "Database design",
-    description: "Normalized schemas, indexing and query optimization for transactional workloads.",
+    description: "Normalized schemas and optimized queries that scale with the business.",
   },
   {
     icon: KeyRound,
     title: "Auth & access control",
-    description: "JWT authentication, RBAC and API security across enterprise modules.",
+    description: "Role-based access so the right people see the right data.",
   },
   {
     icon: Sparkles,
     title: "AI & data applications",
-    description: "LLM-driven pipelines with LangChain, vector search and Gemini.",
+    description: "LLM-powered workflows that turn raw data into decisions.",
   },
 ];
 
@@ -34,23 +34,24 @@ export function About() {
           <div>
             <SectionHeading
               eyebrow="About"
-              title="Building systems that actually work."
-              gradientWord="actually work."
+              title="I build systems, not just features."
+              gradientWord="not just features."
             />
 
             <Reveal delay={0.1}>
               <p className="mt-6 text-base leading-relaxed text-muted sm:text-lg">
-                I&apos;m a backend-focused full-stack developer who designs scalable services and
-                the databases underneath them. My work spans REST API design, authentication and
-                authorization, enterprise modules like CRM and invoicing, and AI-powered pipelines
-                that connect language models to real production data.
+                Most businesses don&apos;t need another complicated piece of software&nbsp;— they
+                need the messy process behind it to work better. I work with startups, founders and
+                growing businesses to turn manual operations into software: workflow automation,
+                internal dashboards, APIs, SaaS platforms, integrations and AI-powered tools.
               </p>
             </Reveal>
             <Reveal delay={0.16}>
               <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
-                On the frontend, I use React and Next.js to ship the interfaces that sit on top of
-                those systems&nbsp;— so the same person who designs the schema can also ship the
-                dashboard that reads from it.
+                My work usually starts with a simple question&nbsp;— what&apos;s taking too much
+                time, creating errors, or forcing people to work manually? From there I design the
+                system, build the backend, connect the data, and ship the interface that reads from
+                it. Software that&apos;s useful in the real world, not just a demo.
               </p>
             </Reveal>
 

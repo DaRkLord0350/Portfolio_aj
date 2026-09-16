@@ -40,6 +40,16 @@ const stepIcons: Record<string, LucideIcon> = {
   "Data Extraction": Search,
   "Structured JSON": FileJson,
   "Backend / Analytics": Server,
+  "Banking APIs": Landmark,
+  "AI Copilot": BrainCircuit,
+  "Orders / Inventory": Layers,
+  "Multi-Source Data": Database,
+  Ingestion: Database,
+  Profiling: Search,
+  "Quality Scoring": ShieldCheck,
+  Cleansing: Code2,
+  "MDM / Golden Records": Database,
+  "Governance & Reporting": FileText,
 };
 
 export function PipelineFlow({ steps }: { steps: string[] }) {

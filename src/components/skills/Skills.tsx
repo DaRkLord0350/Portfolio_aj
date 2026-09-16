@@ -1,16 +1,14 @@
-import { Braces, Server, LayoutTemplate, Database, Cloud, Sparkles } from "lucide-react";
+import { Server, LayoutTemplate, Sparkles, Cloud } from "lucide-react";
 import { skillGroups } from "@/data/skills";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { Chip } from "@/components/ui/Chip";
 
 const groupIcons: Record<string, React.ComponentType<{ className?: string; strokeWidth?: number }>> = {
-  languages: Braces,
   backend: Server,
   frontend: LayoutTemplate,
-  databases: Database,
-  cloud: Cloud,
   "ai-data": Sparkles,
+  infrastructure: Cloud,
 };
 
 export function Skills() {
@@ -18,12 +16,13 @@ export function Skills() {
     <section id="skills" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
-          eyebrow="Skills"
-          title="A toolkit built for production."
-          gradientWord="production."
+          eyebrow="Tech Stack"
+          title="The tools behind the systems I ship."
+          gradientWord="I ship."
+          description="Not a list of buzzwords — this is what actually goes into the platforms and projects above."
         />
 
-        <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {skillGroups.map((group) => {
             const Icon = groupIcons[group.id] ?? Server;
             return (

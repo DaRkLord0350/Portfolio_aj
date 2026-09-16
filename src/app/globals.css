@@ -98,6 +98,15 @@
     backdrop-filter: blur(24px);
   }
 
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
   .noise-overlay {
     position: fixed;
     inset: 0;

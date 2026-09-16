@@ -2,7 +2,8 @@ export const profile = {
   name: "Anshuman Jha",
   firstName: "Anshuman",
   role: "Backend & Full-Stack Developer",
-  tagline: "Building scalable APIs, enterprise systems and AI-powered applications.",
+  tagline:
+    "I help startups and growing businesses turn manual workflows, spreadsheets and disconnected tools into reliable software systems.",
   location: "India",
   email: "anshuman.jha325@gmail.com",
   phone: "+91 7903262197",
@@ -15,8 +16,8 @@ export const profile = {
 } as const;
 
 export const seo = {
-  title: "Anshuman Jha — Backend & Full-Stack Developer",
+  title: "Anshuman Jha — Business Systems Builder | Backend & Full-Stack Developer",
   description:
-    "Anshuman Jha is a Backend & Full-Stack Developer building scalable APIs, enterprise systems, and AI-powered applications with FastAPI, Node.js, Next.js and PostgreSQL.",
+    "Anshuman Jha builds business software, backend systems, SaaS platforms, automation workflows, dashboards and AI-powered applications for startups and growing businesses.",
   siteUrl: "https://ajportfolio0350.vercel.app",
 } as const;

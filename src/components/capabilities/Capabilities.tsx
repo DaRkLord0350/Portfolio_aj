@@ -1,16 +1,16 @@
-import { Server, Database, ShieldCheck, Building2, BrainCircuit, Cloud, type LucideIcon } from "lucide-react";
+import { Zap, Server, Building2, BrainCircuit, Database, Link2, type LucideIcon } from "lucide-react";
 import { capabilities, type Capability } from "@/data/capabilities";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { RevealGroup, RevealItem } from "@/components/ui/Reveal";
 import { Chip } from "@/components/ui/Chip";
 
 const iconMap: Record<Capability["icon"], LucideIcon> = {
+  zap: Zap,
   server: Server,
-  database: Database,
-  shield: ShieldCheck,
   building: Building2,
   brain: BrainCircuit,
-  cloud: Cloud,
+  database: Database,
+  link: Link2,
 };
 
 export function Capabilities() {
@@ -18,9 +18,10 @@ export function Capabilities() {
     <section id="capabilities" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <SectionHeading
-          eyebrow="Engineering Capabilities"
-          title="What I bring to a backend team."
-          gradientWord="backend team."
+          eyebrow="Services"
+          title="What I can build for your business."
+          gradientWord="for your business."
+          description="Technology is the tool. The goal is always the same — turn a business problem into working software."
         />
 
         <RevealGroup className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

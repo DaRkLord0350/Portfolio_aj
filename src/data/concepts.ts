@@ -49,6 +49,7 @@ export const engineeringFoundations: ConceptGroup[] = [
     items: [
       "Scalable Backend Services",
       "Service Architecture",
+      "Multi-Tenant Architecture",
       "API Integration",
       "External API Integration",
       "Event & Webhook Processing",
@@ -69,6 +70,8 @@ export const engineeringFoundations: ConceptGroup[] = [
       "LLM Integration",
       "OCR Pipelines",
       "Structured Data Extraction",
+      "Data Governance",
+      "Master Data Management",
       "Data Analysis",
     ],
   },

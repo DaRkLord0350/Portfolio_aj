@@ -4,14 +4,13 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X, ArrowUpRight } from "lucide-react";
-import { profile } from "@/data/profile";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -71,7 +70,7 @@ export function Navbar() {
 
           <div className="hidden items-center gap-3 md:flex">
             <a
-              href={profile.links.email}
+              href="#contact"
               className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-violet-600 to-indigo-500 px-4 py-2 text-sm font-medium text-white shadow-glow-sm transition-transform hover:-translate-y-0.5"
             >
               Let&apos;s Talk
@@ -112,7 +111,7 @@ export function Navbar() {
                 </a>
               ))}
               <a
-                href={profile.links.email}
+                href="#contact"
                 onClick={() => setOpen(false)}
                 className="mt-2 inline-flex items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-violet-600 to-indigo-500 px-4 py-3 text-sm font-medium text-white"
               >

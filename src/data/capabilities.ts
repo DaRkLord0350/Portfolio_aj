@@ -1,6 +1,6 @@
 export type Capability = {
   id: string;
-  icon: "server" | "database" | "shield" | "building" | "brain" | "cloud";
+  icon: "zap" | "server" | "building" | "brain" | "database" | "link";
   title: string;
   description: string;
   tags: string[];
@@ -8,51 +8,51 @@ export type Capability = {
 
 export const capabilities: Capability[] = [
   {
-    id: "api-engineering",
+    id: "business-automation",
+    icon: "zap",
+    title: "Business Automation",
+    description:
+      "Replacing repetitive spreadsheets, manual processes and operational busywork with reliable software.",
+    tags: ["Workflow Automation", "Background Jobs", "Scripting"],
+  },
+  {
+    id: "backend-apis",
     icon: "server",
-    title: "API Engineering",
+    title: "Backend Systems & APIs",
     description:
-      "Designing and shipping REST APIs — 20+ endpoints supporting CRM, invoicing, authentication, reporting and workflow automation.",
-    tags: ["FastAPI", "Node.js", "REST APIs", "OpenAPI"],
+      "Production-ready REST APIs, databases, authentication, RBAC and business workflows.",
+    tags: ["FastAPI", "Node.js", "REST APIs", "RBAC"],
   },
   {
-    id: "database-architecture",
-    icon: "database",
-    title: "Database Architecture",
-    description:
-      "Designing normalized schemas, indexing strategies and optimized SQL queries for transactional workloads.",
-    tags: ["PostgreSQL", "MySQL", "MongoDB", "Prisma ORM"],
-  },
-  {
-    id: "auth",
-    icon: "shield",
-    title: "Authentication & Authorization",
-    description:
-      "Implementing JWT authentication, role-based access control and API security across enterprise modules.",
-    tags: ["JWT", "RBAC", "API Security"],
-  },
-  {
-    id: "enterprise-systems",
+    id: "saas-platforms",
     icon: "building",
-    title: "Enterprise Systems",
+    title: "SaaS & Internal Platforms",
     description:
-      "Building enterprise modules — CRM, invoicing, reconciliation and reporting — with webhook and background-job processing.",
-    tags: ["Webhooks", "Background Jobs", "Workflow Automation"],
+      "Multi-user applications, dashboards, admin panels, CRM and ERP-style operational systems.",
+    tags: ["Next.js", "Multi-Tenant", "PostgreSQL", "Prisma"],
   },
   {
-    id: "ai-data",
+    id: "ai-applications",
     icon: "brain",
-    title: "AI / Data Applications",
+    title: "AI-Powered Applications",
     description:
-      "Building schema-aware retrieval and LLM-driven pipelines using LangChain, embeddings, vector search and Gemini.",
-    tags: ["LangChain", "Gemini", "ChromaDB", "Pandas"],
+      "LLM-powered workflows, natural-language-to-SQL, document intelligence and AI assistants.",
+    tags: ["LangChain", "Gemini", "ChromaDB", "LLM Integration"],
   },
   {
-    id: "cloud-devops",
-    icon: "cloud",
-    title: "Cloud & DevOps",
+    id: "data-analytics",
+    icon: "database",
+    title: "Data & Analytics",
     description:
-      "Shipping with Docker Compose, GitHub Actions and cloud platforms for reliable, repeatable delivery.",
-    tags: ["Docker", "GitHub Actions", "AWS", "Vercel"],
+      "Dashboards, reporting pipelines, SQL analysis and business intelligence built on real data.",
+    tags: ["SQL", "Pandas", "Data Pipelines", "Dashboards"],
+  },
+  {
+    id: "integrations",
+    icon: "link",
+    title: "Integrations",
+    description:
+      "Connecting products to banking, payment, CRM and third-party APIs through secure webhooks.",
+    tags: ["Webhooks", "Banking APIs", "REST APIs"],
   },
 ];

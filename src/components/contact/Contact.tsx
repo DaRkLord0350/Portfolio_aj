@@ -1,4 +1,3 @@
-import { Mail } from "lucide-react";
 import { profile } from "@/data/profile";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/BrandIcons";
 import { Button } from "@/components/ui/Button";
@@ -22,19 +21,19 @@ export function Contact() {
                   Contact
                 </span>
                 <h2 className="mt-5 text-3xl font-semibold leading-tight text-ink sm:text-4xl lg:text-[2.75rem]">
-                  Let&apos;s build something <span className="text-gradient">useful.</span>
+                  Have a business problem <span className="text-gradient">to solve?</span>
                 </h2>
-                <p className="mt-4 max-w-md text-base text-muted">
-                  Have a product, system or technical problem that needs solving? I&apos;d like to
-                  hear about it.
+                <p className="mt-4 max-w-md text-base font-medium text-ink/90">
+                  Let&apos;s turn it into software.
+                </p>
+                <p className="mt-3 max-w-md text-base text-muted">
+                  Building an MVP, automating an internal workflow, replacing spreadsheets,
+                  connecting APIs, or adding AI to your product? Let&apos;s talk about it.
                 </p>
               </Reveal>
 
               <Reveal delay={0.1}>
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <Button href={profile.links.email} icon={<Mail className="h-4 w-4" />}>
-                    Email Me
-                  </Button>
                   <Button
                     href={profile.links.github}
                     external
