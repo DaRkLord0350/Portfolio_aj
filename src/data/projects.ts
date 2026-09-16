@@ -16,11 +16,13 @@ export type Project = {
   imageFolder: string;
   imageAlt: string;
   imageNote?: string;
+  /** Filename within imageFolder. Defaults to "cover.png" — override for cache-busting a specific project's asset URL. */
+  imageFile?: string;
 };
 
-/** Path to a project's primary screenshot. Drop the file at public/projects/<imageFolder>/cover.png. */
-export function projectCoverSrc(project: Pick<Project, "imageFolder">) {
-  return `/projects/${project.imageFolder}/cover.png`;
+/** Path to a project's primary screenshot. Drop the file at public/projects/<imageFolder>/<imageFile ?? "cover.png">. */
+export function projectCoverSrc(project: Pick<Project, "imageFolder" | "imageFile">) {
+  return `/projects/${project.imageFolder}/${project.imageFile ?? "cover.png"}`;
 }
 
 export const projects: Project[] = [
@@ -123,8 +125,8 @@ export const projects: Project[] = [
       github: "https://github.com/DaRkLord0350/OCR-Bot",
     },
     imageFolder: "ocr-bot",
-    imageAlt: "A receipt processed by the OCR-Bot document intelligence pipeline",
-    imageNote: "Sample input — public receipt dataset",
+    imageAlt: "OCR-Bot document intelligence automation cover",
+    imageFile: "ocr-bot-cover-v2.png",
   },
   {
     id: "data-governance",
@@ -157,6 +159,7 @@ export const projects: Project[] = [
     },
     imageFolder: "e-commerce",
     imageAlt: "Generated data governance dashboard showing quality score, metadata coverage and open issues",
+    imageFile: "e-commerce-cover-v2.png",
   },
   {
     id: "bi-dashboard",
@@ -179,5 +182,6 @@ export const projects: Project[] = [
     },
     imageFolder: "analytics",
     imageAlt: "Sales performance and discount-band profitability Power BI dashboard",
+    imageFile: "analytics-cover-v2.png",
   },
 ];

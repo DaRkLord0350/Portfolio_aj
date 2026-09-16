@@ -9,7 +9,8 @@ import { PipelineFlow } from "./PipelineFlow";
 export function ProjectVisual({ project }: { project: Project }) {
   const [imageFailed, setImageFailed] = useState(false);
   const showImage = !imageFailed;
-  const chromeLabel = showImage ? `${project.imageFolder}/cover.png` : `${project.id} — architecture`;
+  const coverSrc = projectCoverSrc(project);
+  const chromeLabel = showImage ? coverSrc.replace(/^\//, "") : `${project.id} — architecture`;
 
   return (
     <div className="relative">
@@ -23,7 +24,7 @@ export function ProjectVisual({ project }: { project: Project }) {
       {showImage ? (
         <div className="relative aspect-[16/9] w-full bg-black/30">
           <Image
-            src={projectCoverSrc(project)}
+            src={coverSrc}
             alt={project.imageAlt}
             fill
             sizes="(min-width: 1024px) 1000px, 100vw"
